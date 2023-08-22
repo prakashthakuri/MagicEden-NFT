@@ -1,0 +1,79 @@
+
+
+
+
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+
+
+.nft-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+/* NFTCard.css */
+.nft-card {
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nft-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: skyblue;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.card-name {
+  color: white;
+  font-weight: bold;
+}
+
+.card-price {
+  color: white;
+  font-weight: bold;
+}
+
+
+
+/* SearchBar.css */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.search-input {
+  width: 300px;
+  max-width: 100%;
+  padding: 10px 20px; /* Add padding here */
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 3px rgba(38, 132, 255, 0.2);
+}
