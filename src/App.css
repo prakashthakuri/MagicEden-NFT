@@ -1,16 +1,4 @@
 
-
-
-
-/* styles.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-
-
-
-
 .nft-card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -18,8 +6,6 @@
   padding: 20px;
 }
 
-
-/* NFTCard.css */
 .nft-card {
   border: 1px solid #e2e8f0;
   padding: 1rem;
@@ -55,7 +41,6 @@
 
 
 
-/* SearchBar.css */
 .search-bar-container {
   display: flex;
   justify-content: center;
@@ -66,7 +51,7 @@
 .search-input {
   width: 300px;
   max-width: 100%;
-  padding: 10px 20px; /* Add padding here */
+  padding: 10px 20px; 
   border: 1px solid #e2e8f0;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;

@@ -1,11 +1,5 @@
-// NFTCard.tsx
 import React from 'react';
-
-interface NFTCardProps {
-  imageSrc: string;
-  name: string;
-  price: number;
-}
+import { NFTCardProps } from '../interfaces/GlobalInterface';
 
 const NFTCard: React.FC<NFTCardProps> = ({ imageSrc, name, price }) => {
   return (

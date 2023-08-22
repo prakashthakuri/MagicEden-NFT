@@ -1,17 +1,10 @@
-// SearchBar.tsx
-import React, { useState } from 'react';
+import React from 'react';
+import { SearchBarProps } from '../interfaces/GlobalInterface';
 
-interface SearchBarProps {
-  placeholder: string;
-  onSearch: (searchText: string) => void;
-}
 
-const SearchBar: React.FC<SearchBarProps> = ({ placeholder, onSearch }) => {
-  const [searchText, setSearchText] = useState('');
-
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newSearchText = event.target.value;
-    setSearchText(newSearchText);
     onSearch(newSearchText);
   };
 
@@ -19,7 +12,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ placeholder, onSearch }) => {
   <div className="search-bar-container flex justify-center items-center my-4">
       <input
         type="text"
-        placeholder={placeholder}
+        placeholder= "Search NFT Name"
         className="search-input py-2 px-3 rounded-md border focus:outline-none focus:ring focus:border-blue-300"
         onChange={handleInputChange}
       />
